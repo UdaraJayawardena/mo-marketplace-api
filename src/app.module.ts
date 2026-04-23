@@ -6,6 +6,11 @@ import { ConfigService } from '@nestjs/config';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
+import { AuthModule } from './auth/auth.module';
+import { ProductsModule } from './products/products.module';
+import { VariantsModule } from './variants/variants.module';
+import { CommonModule } from './common/common.module';
+import { ConfigModule } from './config/config.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -22,6 +27,11 @@ import { ConfigModule } from '@nestjs/config';
         synchronize: true, // OK for dev only
       }),
     }),
+    AuthModule,
+    ProductsModule,
+    VariantsModule,
+    CommonModule,
+    ConfigModule,
   ],
   controllers: [AppController],
   providers: [AppService],
