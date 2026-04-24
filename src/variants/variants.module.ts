@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { VariantsService } from './variants.service';
 
-@Module({})
+@Module({
+  providers: [VariantsService]
+})
 export class VariantsModule {}
