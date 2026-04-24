@@ -10,7 +10,7 @@ import { AuthModule } from './auth/auth.module';
 import { ProductsModule } from './products/products.module';
 import { VariantsModule } from './variants/variants.module';
 import { CommonModule } from './common/common.module';
-import { ConfigModule } from './config/config.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -32,6 +32,7 @@ import { ConfigModule } from './config/config.module';
     VariantsModule,
     CommonModule,
     ConfigModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
