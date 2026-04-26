@@ -14,7 +14,6 @@ export class VariantsService {
   async create(productId: number, dto: any, product: any) {
     const combinationKey = generateCombinationKey(dto.attributes);
 
-    // Check duplicate manually (clear error message)
     const existing = await this.repo.findOne({
       where: {
         product: { id: productId },

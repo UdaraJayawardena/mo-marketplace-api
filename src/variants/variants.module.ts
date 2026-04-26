@@ -6,10 +6,10 @@ import { VariantsController } from './variants.controller';
 import { Variant } from './variant.entity';
 
 @Module({
-    imports: [TypeOrmModule.forFeature([Variant])], // 👈 add this
+    imports: [TypeOrmModule.forFeature([Variant])],
   controllers: [VariantsController],
 
   providers: [VariantsService],
-    exports: [VariantsService], // 👈 this was missing
+    exports: [VariantsService],
 })
 export class VariantsModule {}

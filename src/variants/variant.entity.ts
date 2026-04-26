@@ -8,7 +8,7 @@ import {
 import { Product } from '../products/product.entity';
 
 @Entity()
-@Unique(['product', 'combinationKey']) // prevents duplicates at DB level
+@Unique(['product', 'combinationKey'])
 export class Variant {
   @PrimaryGeneratedColumn()
   id!: number;
