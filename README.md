@@ -133,14 +133,6 @@ Used to enforce uniqueness across variants.
 
 ---
 
-## 📌 Assumptions
-
-- Authentication is simplified (no refresh tokens)
-- No order/payment system (mock project)
-- Variant attributes are dynamic
-
----
-
 ## 👨‍💻 Author
 
 **Udara Jayawardena**
