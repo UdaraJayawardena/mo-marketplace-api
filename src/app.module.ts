@@ -24,7 +24,7 @@ import { UsersModule } from './users/users.module';
         password: config.get('DB_PASSWORD'),
         database: config.get('DB_NAME'),
         autoLoadEntities: true,
-        synchronize: true, // OK for dev only
+        synchronize: true,
       }),
     }),
     AuthModule,
