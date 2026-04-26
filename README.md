@@ -133,6 +133,9 @@ Used to enforce uniqueness across variants.
 
 ---
 
+## 🌐 Live API
+**Base URL:** https://mo-marketplace-api-production-a3a1.up.railway.app/api
+
 ## 👨‍💻 Author
 
 **Udara Jayawardena**
